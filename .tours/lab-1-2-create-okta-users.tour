@@ -1,0 +1,22 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Lab 1-2 Create Okta Users",
+  "steps": [
+    {
+      "title": "Lab Overview",
+      "description": "  🎯 **Objective**:   Create some End User accounts for testing configurations.\n\n  🎬 **Scenario**:    We'll need some End Users to test out the end user experience.\n\n  ⏱️ **Duration**:   10-15 minutes"
+    },
+    {
+      "title": "Navigate to the People Directory",
+      "description": "## Navigate to the People Directory\n\n1. Ensure you are signed in as your Super Admin account, `oktatraining`.\n\n2. In the Admin Dashboard, select `Directory` from the menu and then select `People`."
+    },
+    {
+      "title": "Add an End User",
+      "description": "## Add an End User\n\n1. Click the `Add Person` button.\n2. Enter the following details:\n\n\n|**Field**                                  | **Value**                               |\n|:-------------------------------------------|:-----------------------------------------|\n| First name                                |  `Kay`                                |\n| Last name                                 |  `West`                               |\n| Username                                  |  `kay.west@oktaice.com`                 |\n| Primary email                             |  `kay.west@oktaice.com`                 |\n| Secondary email                           |  `Your work or personal email address`|\n|Activation | `Activate now`|\n| I will set the password                   |`CHECKED`                       |\n| Enter password                            |  `Tra!nme4321`                        |\n| User must change password on first login  |  `UNCHECKED`    |\n\n\n **Click the `Save and Add Another` button**"
+    },
+    {
+      "title": "Add Additional User",
+      "description": "## Add Additional User\nEnter the following details:\n\n\n|**Field**                                  | **Value**                               |\n|:-------------------------------------------|:-----------------------------------------|\n| First name                                |  `Frank`                                |\n| Last name                                 |  `Boone`                               |\n| Username                                  |  `frank.boone@oktaice.com`                 |\n| Primary email                             |  `frank.boone@oktaice.com`                 |\n| Secondary email                           |  `Your work or personal email address`|\n|Activation | `Activate now`|\n| I will set the password                   |`CHECKED`                       |\n| Enter password                            |  `Tra!nme4321`                        |\n| User must change password on first login  |  `UNCHECKED`    |\n\n\n **Click the `Save` button**"
+    }
+  ]
+}
