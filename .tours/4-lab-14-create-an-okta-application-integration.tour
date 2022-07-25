@@ -1,0 +1,10 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "#4 Lab 1.4 Create an Okta Application Integration",
+  "steps": [
+    {
+      "title": "Lab Overview",
+      "description": "  🎯 **Objective**    Create an Okta Application Configuration for the Okta Ice Portal.\n\n  🎬 **Scenario**     Okta Ice is developing a custom portal, which is a Single Page\n                  App (SPA) that will expose relevant applications to their Franchisees and Customers.\n\n  ⏱️ **Duration**    15 minutes"
+    }
+  ]
+}
