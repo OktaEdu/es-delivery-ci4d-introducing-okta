@@ -1,6 +1,6 @@
 {
   "$schema": "https://aka.ms/codetour-schema",
-  "title": "Lab 1-1 Access Your Environment",
+  "title": "1: Lab 1-1 Access Your Environment",
   "steps": [
     {
       "title": "Lab Overview",
@@ -18,5 +18,6 @@
       "title": "Lab Checkpoint",
       "description": "## ✅ Checkpoint\n\nAt this point, you have access to your lab environment to complete the rest of the labs.\n"
     }
-  ]
+  ],
+  "isPrimary": true
 }
