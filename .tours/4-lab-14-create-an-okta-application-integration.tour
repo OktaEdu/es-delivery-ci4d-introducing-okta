@@ -1,6 +1,6 @@
 {
   "$schema": "https://aka.ms/codetour-schema",
-  "title": "#4 Lab 1.4 Create an Okta Application Integration",
+  "title": "#4 - Lab 1.4 Create an Okta Application Integration",
   "steps": [
     {
       "title": "Lab Overview",
@@ -8,7 +8,7 @@
     },
     {
       "title": "Install Node Packages",
-      "description": "## Install Node Packages\n\nThe source files for the Portal app are in this project that you have open. Before we run the app, we'll need to install the node packages the project depends on. You can do this manually by clicking on `TERMINAL` within VSCode and typing in the command `npm install` or, to you can click [here](command:codetour.sendTextToTerminal?[\"npm install\"]) and the same process will be done for you autmatically.\n\nEither way, this process will take a moment, so *don't* wait for it to complete before moving on to the next step.\n\n"
+      "description": "## Install Node Packages\n\nThe source files for the Portal app are in this project that you have open. Before we run the app, we'll need to install the node packages the project depends on. You can do this manually by clicking on `TERMINAL` within VSCode and entering the following command: \n```\nnpm install\n``` \n\nAlternatively, the same command will be issued for you automatically if you click [here](command:codetour.sendTextToTerminal?[\"npm install\"]).\n\nEither way, this process will take a moment, so *don't* wait for it to complete before moving on to the next step.\n\n"
     },
     {
       "title": "Navigate to the Create a New App Integration Screen",
