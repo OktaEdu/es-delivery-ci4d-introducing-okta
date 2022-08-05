@@ -1,0 +1,23 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "#1 - Lab 1.1 Access Your Environment",
+  "steps": [
+    {
+      "title": "Lab Overview",
+      "description": "## Lab 1-1: Access Your Okta Org\n\n🎯 **Objective**:    Sign in to your virtual machine and authenticate to your Okta organization.\n\n⏱️ **Duration**:    15 minutes\n"
+    },
+    {
+      "title": "Access Your VM",
+      "description": "## Access Your VM\n\n"
+    },
+    {
+      "title": "Access Your Okta Admin Dashboard",
+      "description": "## Access Your Okta Admin Dashboard\n\n1. Launch the Chrome browser.\n\n2. Copy the Okta Org assigned to you (e.g. `https://oktaiceXXX.oktapreview.com`)\n\n3.  On the **Okta Sign In** page, sign in with the credentials assigned to you.\n\n3.  Select a recovery question and enter in a recovery answer.\n\n\n4.  Click `Create My Account`"
+    },
+    {
+      "title": "Lab Checkpoint",
+      "description": "## ✅ Checkpoint\n\nAt this point, you have access to your lab environment to complete the rest of the labs.\n"
+    }
+  ],
+  "isPrimary": true
+}
