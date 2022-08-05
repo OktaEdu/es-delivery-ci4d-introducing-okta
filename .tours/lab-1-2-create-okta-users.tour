@@ -4,7 +4,7 @@
   "steps": [
     {
       "title": "Lab Overview",
-      "description": "  ## Lab 1-3 Create Okta Users\n  \n  🎯 **Objective**:   Create some End User accounts and assign them to Okta Groups for testing configurations.\n\n  🎬 **Scenario**:    We'll need some End Users to test out the Franchisee and Customer experience.\n\n  ⏱️ **Duration**:   10-15 minutes"
+      "description": "  ## Lab 1.3 Create Okta Users\n  \n  🎯 **Objective**:   Create some End User accounts and assign them to Okta Groups for testing configurations.\n\n  🎬 **Scenario**:    We'll need some End Users to test out the Franchisee and Customer experience.\n\n  ⏱️ **Duration**:   10-15 minutes"
     },
     {
       "title": "Navigate to the People Directory",
