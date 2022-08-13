@@ -2,12 +2,9 @@
   <div class="login">
     <!-- Display either the sign in or sign out button based on authN state -->
     <div>
-      <a href="#" v-if="authState && authState.isAuthenticated" @click="logout">Logout</a>
-      <a href="#" v-else @click="login">Login</a>
+      <a href="#" v-if="authState && authState.isAuthenticated" @click="logout">Sign Out</a>
+      <a href="#" v-else @click="login">Sign In</a>
     </div>
-
-    <h1>{{ msg }}</h1>
-
   </div>
 </template>
 

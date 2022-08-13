@@ -8,7 +8,7 @@
     },
     {
       "title": "Install Node Packages",
-      "description": "## Install Node Packages\n\nThe source files for the Portal app are in this project that you have open. Before we run the app, we'll need to install the node packages the project depends on. You can do this manually by clicking on `TERMINAL` within VSCode and entering the following command: \n```\nnpm install\n``` \n\nAlternatively, the same command will be issued for you automatically if you click [here](command:codetour.sendTextToTerminal?[\"npm install\"]).\n\nEither way, this process will take a moment, so *don't* wait for it to complete before moving on to the next step.\n\n"
+      "description": "## Install Node Packages\n\nThe source files for the Portal app are in the `okta-ice-portal` directory of this workspace. Before we configure and run the app, we'll need to install the node packages the project depends on. You can do this manually by clicking on `TERMINAL` within VSCode and entering the following command: \n```\ncd okta-ice-portal && npm install\n``` \n\nAlternatively, the same command will be issued for you automatically if you click [here](command:codetour.sendTextToTerminal?[\"cd okta-ice-portal && npm install\"]).\n\nEither way, this process will take a moment, so *don't* wait for it to complete before moving on to the next step.\n\n"
     },
     {
       "title": "Navigate to the Create a New App Integration Screen",
@@ -20,7 +20,7 @@
     },
     {
       "title": "Configure the General Settings",
-      "description": "## Configure the General Settings\n\nFill in the following:\n\n  |**Attribute**          | **Value**|\n  |:-----------------------|:-----------------------------------------------|\n  |App integration name   | `Okta Ice Portal`                              |\n  | Grant type | `Authorization Code` |\n  |Sign-in redirect URIs  | `http://localhost:8081/redirect`              |\n"
+      "description": "## Configure the General Settings\n\nFill in the following:\n\n  |**Attribute**          | **Value**|\n  |:-----------------------|:-----------------------------------------------|\n  |App integration name   | `Okta Ice Portal`                              |\n  | Grant type | `Authorization Code` |\n  |Sign-in redirect URIs  | `http://localhost:8080/callback`              |\n"
     },
     {
       "title": "Set Assignments",
@@ -28,19 +28,188 @@
     },
     {
       "title": "Set Initiate Login URI",
-      "description": "## Set Initiate Login URI\n\n1. After you save your configuration for the Okta Ice Portal, scroll down to `General Settings` once more.\n2. Click `Edit`\n3. Scroll down to `LOGIN`\n4. In the `Initiate login URI` field, put `http://localhost:8081/redirect`\n5. Click `Save`"
+      "description": "## Set Initiate Login URI\n\n1. After you save your configuration for the Okta Ice Portal, scroll down to `General Settings` once more.\n2. Click `Edit`\n3. Scroll down to `LOGIN`\n4. In the `Initiate login URI` field, put `http://localhost:8080/login`\n5. Click `Save`\n\nThis is the URI that triggers Okta to initiate the sign-in flow. When Okta redirects to this URI, the client is triggered to send an `authorize` request. "
     },
     {
       "title": "Enable CORS",
-      "description": "## Enable CORS\n\n1. Navigate to `Security > API` in the Admin menu.\n\n2.  In the `Trusted Origins` tab, click `Add Origin`.\n\n3.  In the modal that pops up, provide the following information:\n\n\n  |**Attribute**  | **Value**|\n  |:---------------|---------------------------------------------------------:|\n  |Name           | Portal                                            |\n  |Origin URL     | `http://localhost:8081`                                 |\n  |CORS           |CHECKED                  |\n  |Redirect       | UNCHECKED                    |\n\n\nFinally, click `Save`\n"
+      "description": "## Enable CORS\n\n1. Navigate to `Security > API` in the Admin menu.\n\n2.  In the `Trusted Origins` tab, click `Add Origin`.\n\n3.  In the modal that pops up, provide the following information:\n\n\n  |**Attribute**  | **Value**|\n  |:---------------|---------------------------------------------------------:|\n  |Name           | Portal                                            |\n  |Origin URL     | `http://localhost:8080`                                 |\n  |CORS           |CHECKED                  |\n  |Redirect       | UNCHECKED                    |\n\n\nFinally, click `Save`\n"
+    },
+    {
+      "title": "Install Okta Vue.js SDK",
+      "description": "## Install Okta Vue.js SDK\n\n\nNext, we will install the [Okta Vue.js SDK](https://github.com/okta/okta-vue/releases) using the NPM module. You can choose to do this step manually or simply click [here](command:codetour.sendTextToTerminal?[\"npm install @okta/okta-vue@5.1.1\"]).\n\nIf completing manually, move to the `TERMINAL` at the bottom of VS Code and enter the command:\n\n ```bash\n npm install @okta/okta-vue@5.1.1\n ```\n"
     },
     {
       "title": "Install AuthJS",
-      "description": "## Install AuthJS\n\nNext we will install [Okta's AuthJS SDK](https://github.com/okta/okta-auth-js/) using the NPM module. You can choose to do this step manually or simply click [here](command:codetour.sendTextToTerminal?[\"npm install --save @okta/okta-auth-js\"]).\n\nIf completing manually, move to the `TERMINAL` at the bottom of VS Code and enter the command:\n\n ```bash\n npm install --save @okta/okta-auth-js\n ```\n\n"
+      "description": "## Install AuthJS\n\nNext we will install [Okta's AuthJS SDK](https://github.com/okta/okta-auth-js/) using the NPM module. You can choose to do this step manually or simply click [here](command:codetour.sendTextToTerminal?[\"npm install @okta/okta-auth-js@6.0.0\"]).\n\nIf completing manually, move to the `TERMINAL` at the bottom of VS Code and enter the command:\n\n ```bash\n npm install @okta/okta-auth-js@6.0.0\n ```\n\n"
+    },
+    {
+      "file": "okta-ice-portal/src/config.js",
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 1
+        },
+        "end": {
+          "line": 11,
+          "character": 1
+        }
+      },
+      "description": "## Configure Your Application\n\nWe're going to use `src/config` to define our app's configuration settings. We'll need to specify the `clientID` and the `issuer`\n\n"
+    },
+    {
+      "file": "okta-ice-portal/src/config.js",
+      "description": "## Find and Enter Your Client ID\n\nTo find your **Client ID**, go back to the Chrome tab we left open after setting up the application integration. If you navigated away from this page, you can return by clicking `Applications` > `Applications` and clicking on the `Okta Ice Portal` integration.\n\nThe **Client ID** is found on the **General** tab of the **Client Credentials** section. \n\nCopy this value and paste it into the line highlighted above to replace the placeholder value.",
+      "line": 5
+    },
+    {
+      "file": "okta-ice-portal/src/config.js",
+      "description": "## Find and Enter Your Issuer\n\nThe **Issuer** is simply your assigned Okta Org URI. Replace the the URI in the highlighted line with your URI.\n\nNote: You can also find this value by selecting `Security` > `API` from the left navigation pane examining the **Issuer URI** field for the authorization server.",
+      "line": 6
+    },
+    {
+      "title": "Save and Run Application",
+      "description": "## Save and Run Application\n\n### Save\nSave your VSCode project by clicking `File` > `Save`.\n\n### Run \nIn your `TERMINAL` tab, enter the command: \n\n```\nnpm run serve\n``` \n\nAlternatively, you can click [here](command:codetour.sendTextToTerminal?[\"npm run serve\"]) to issue the command automatically.\n\nNote that you should still be in the `okta-ice-portal` directory when you issue this command.\n\n\n"
+    },
+    {
+      "title": "Log In To the Application",
+      "description": "## Access and Log In To the Application\n1. Visit http://localhost:8080 in an **incognito** Chrome tab\n2. Click `Log In` and notice that you are redirected to Okta to initiate the log in flow\n3. Enter the credentials for **soraya.esfeh@oktaice.com**\n4. Once authenticated, you will land back on the Portal page.\n"
+    },
+    {
+      "file": "okta-ice-portal/src/components/Login.vue",
+      "selection": {
+        "start": {
+          "line": 12,
+          "character": 1
+        },
+        "end": {
+          "line": 25,
+          "character": 10
+        }
+      },
+      "description": "## Examine the Login Component: JavaScript\n\nLet's pause to examine the JavaScript in the Login component of our application. Particularly, we'll be looking at the script that triggers both Sign In and Sign Out with Okta. "
+    },
+    {
+      "file": "okta-ice-portal/src/components/Login.vue",
+      "selection": {
+        "start": {
+          "line": 17,
+          "character": 6
+        },
+        "end": {
+          "line": 19,
+          "character": 9
+        }
+      },
+      "description": "## The AuthJS `signInWithRedirect(options)` method\n\nIn our `login()` method, we see a call to `signInWithRedirect()`.\n\nThis is a method defined by [Okta's AuthJS SDK](https://github.com/okta/okta-auth-js#signinwithredirectoptions). When called, the method initiates a full-page redirect to Okta. In this flow, there is an `originalUri` parameter in `options` to track the route before the user signs in. "
+    },
+    {
+      "file": "okta-ice-portal/src/components/Login.vue",
+      "selection": {
+        "start": {
+          "line": 20,
+          "character": 7
+        },
+        "end": {
+          "line": 22,
+          "character": 8
+        }
+      },
+      "description": "## The AuthJS `signOut() Method`\n\nIn our `logout()` method, we see a call to `signOut()`.\n\nThis method is also defined by [Okta's AuthJS SDK](https://github.com/okta/okta-auth-js#signout). A call thto this method signs a user out of their current Okta session and clears all tokens stored locally in the `TokenManger`. By default, the refresh token (if there is one) and access token are **revoked**. This means these tokens are no longer valid and cannot be used."
+    },
+    {
+      "file": "okta-ice-portal/src/components/Login.vue",
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 1
+        },
+        "end": {
+          "line": 9,
+          "character": 12
+        }
+      },
+      "description": "## Examine the Login Component: HTML\n\nNow let's take a moment to examine the HTML that exposes Okta Sign In and Sign Out on our application."
+    },
+    {
+      "file": "okta-ice-portal/src/components/Login.vue",
+      "description": "## Conditionally Exposing Okta Sign Out\n\nIn this bit of HTML, we see a Vue directive `v-if` that is used to conditionally render a `Sign Out` link. This link will be rendered only if there is a valid `authState` (i.e., not `null`) and that the user is authenticated (logged in). \n\nWhen the `Sign Out` link is rendered, a `@click` event listener is attached to it. When the `Sign Out` link is clicked, the event handler calls the `logout()` method we have defined in our JavaScript, which in turn makes a call to Okta's AuthJS `signOut()` method.",
+      "line": 5,
+      "selection": {
+        "start": {
+          "line": 5,
+          "character": 65
+        },
+        "end": {
+          "line": 5,
+          "character": 71
+        }
+      }
+    },
+    {
+      "file": "okta-ice-portal/src/components/Login.vue",
+      "description": "## Conditionally Exposing Okta Sign In\n\nOn the next line of HTML, we see the Vue directive `v-else` that complements the preceeding `v-if` we just examined. \n\nWhen the preceeding `v-if` is `false`, the `Sign Out` link is not rendered. Instead, this line of HTML is reached and the `Sign In` link is rendered instead.\n\nWhen the `Sign In` link is rendered, a `@click` event listener is attached to it. When the `Sign In` link is clicked, the event handler calls the `login()` method we have defined in our JavaScript, which in turn makes a call to Okta's AuthJS `signInWithRedirect(options)` method.",
+      "line": 6
+    },
+    {
+      "title": "View User Profile Claims",
+      "description": "## View User Profile Claims\n\nLet's return to the Chrome tab where we signed in to the Okta Ice Portal. Now that you're logged in, let's take a look at the claims this user has stored in their profile:\n\n1. Click `Profile` from the top navigation bar.\n2. Oberserve the claims."
+    },
+    {
+      "file": "okta-ice-portal/src/components/Profile.vue",
+      "selection": {
+        "start": {
+          "line": 45,
+          "character": 3
+        },
+        "end": {
+          "line": 48,
+          "character": 4
+        }
+      },
+      "description": "## Examine the Profile Component: JavaScript\n\nLet's pause to examine the JavaScript in the Profile component of our application. Particularly, we'll be looking at the script that extracts the `claim` details from the issued `ID Token`."
+    },
+    {
+      "file": "okta-ice-portal/src/components/Profile.vue",
+      "description": "## Retrieving the ID Token",
+      "line": 46
+    },
+    {
+      "file": "okta-ice-portal/src/components/Profile.vue",
+      "description": "## Extracting and Mapping the Claims",
+      "line": 47
+    },
+    {
+      "file": "okta-ice-portal/src/components/Profile.vue",
+      "selection": {
+        "start": {
+          "line": 7,
+          "character": 7
+        },
+        "end": {
+          "line": 23,
+          "character": 13
+        }
+      },
+      "description": "## Examine the Profile Component: HTML\n\nFinally, let's examine the HTML in the Profile component that leverages the claim data we retrieve to display it neatly in a table on a page in the application."
+    },
+    {
+      "file": "okta-ice-portal/src/components/Profile.vue",
+      "description": "## Iterating Through the `claims` Array\n\nIn this segment, we see the `<v-for>` Vue directive that iterates through each entry in the `claims` array returned by the `created ()` JavaScript method we just reviewed. For each entry, a new table row is rendered.",
+      "line": 15
+    },
+    {
+      "file": "okta-ice-portal/src/components/Profile.vue",
+      "description": "## Displaying the `claim` Name\n\nFor each claim we iterate through, this line will render the name of the claim itself.",
+      "line": 16
+    },
+    {
+      "file": "okta-ice-portal/src/components/Profile.vue",
+      "description": "## Displaying the `claim` Value\n\nFor each claim we iterate through, this line will render the value associated with a given claim.",
+      "line": 17
     },
     {
       "title": "Lab Checkpoint",
-      "description": "## ✅ Checkpoint\n\nAt this point, "
+      "description": "## ✅ Checkpoint\n\nAt this point, you have created an application integration with Okta, and you have configured that application to use the Redirect Model of deploying authentication with Okta. Additionally, you have run the application and investigated the claims data associated with a User's profile, which was extracted from the ID token assigned to the user during the authentication flow."
     }
   ]
 }
