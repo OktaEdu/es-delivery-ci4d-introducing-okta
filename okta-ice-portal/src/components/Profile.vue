@@ -12,10 +12,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr
-            v-for="(claim, index) in claims"
-            :key="index"
-          >
+          <tr v-for="(claim, index) in claims" :key="index" >
             <td>{{claim.claim}}</td>
             <td :id="'claim-' + claim.claim">{{claim.value}}</td>
           </tr>
