@@ -4,7 +4,7 @@
 
 This repo contains everything you need to complete the labs in this module:
 
-- Lab 1.1: Acess Your Environment
+- Lab 1.1: Access Your Environment
 - Lab 1.2: Create Okta Groups
 - Lab 1.3: Create Okta Users
 - Lab 1.4: Create an Okta Application Integration
