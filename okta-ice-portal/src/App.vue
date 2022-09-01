@@ -1,16 +1,18 @@
 <template>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   <div id="header">
-  <div class="col-md-6 offset-md-3" id="logo">
+    <div class="row">
+  <div class="col-md-2" id="logo">
     <img alt="Okta Ice logo" src="./assets/ice-logo.png" class="img-fluid">
   </div>
-  <div id="nav">
+  <div class="col-md-6 offset-md-1" id="nav">
     <router-link to="/">Home</router-link> 
     <router-link to="/about">About</router-link> 
     <router-link to="/profile">Profile</router-link> 
     <router-link to="/apps">Apps </router-link>  
     <Login msg="Welcome to Okta Ice"/>
   </div>
+</div>
   </div>
   <router-view/>
 </template>
@@ -38,9 +40,13 @@ export default {
   
 }
 
+
 body, html {
   height: 100%;
   background-image: url(./assets/ice-cream-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 
@@ -51,13 +57,16 @@ body, html {
 
 #nav a {
   font-weight: bold;
-  color: #E4AACD;
+  color: #5AB9F2;
+  
   text-decoration: none;
 }
 
 #nav a:not(:first-of-type)::before, #nav .login::before {
   content: " ● ";
-  color: #888;
+  color: #c7e5f5;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 #nav a.router-link-exact-active {
@@ -65,7 +74,7 @@ body, html {
 }
 
 #nav a:hover {
-  color: #BAD7D0;
+  color: #c7e5f5;
 }
 
 #content-container {
@@ -76,15 +85,15 @@ body, html {
   border-radius: 5px;
   border-style: double;
   border-bottom-width: 0px;
-  border-color: #E4AACD;
+  border-color: #c7e5f5;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
 
 #header {
-  background-color: #222;
-  border-bottom-style: double;
-  border-bottom-color: #E4AACD;
+  background-color: #0E2D5B;
+  border-bottom-color: #c7e5f5;
+  padding: 30px;
   
 }
 

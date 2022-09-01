@@ -18,11 +18,10 @@
 <style scoped>
 
 #footer {
-  background-color: #222;
+  background-color: #0E2D5B;
   font-size: small;
-  border-style: double;
-  border-color: #E4AACD;
-  color: #E4AACD;
+  border-color: #c7e5f5;
+  color: #c7e5f5;
   font-weight: bolder;
   border-top-width: 0px;
   border-bottom-left-radius: 5px;
