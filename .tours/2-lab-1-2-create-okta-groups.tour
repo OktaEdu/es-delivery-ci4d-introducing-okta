@@ -19,6 +19,10 @@
       "description": "## Create a Group Rule for the Customer Group\n\nNow we will create a rule so that any user created that has the `userType` **customer** will automatically be added to the **Customers** group. This will be helpful when we implement self-service registration for our customers.\n\n1. On the top of the **Groups** page, click the `Rules` tab.\n\n2. Click `Add Rule`\n\n3. Name the rule `Add customer userType to Customers Group`\n\n4. Set the **IF** section to read: IF `User attribute` `userType` `Equals` `customer`\n\n5. In the **THEN Assign to** section, type and select the `Customers` group.\n\n6. Click `Save`"
     },
     {
+      "title": "Activate the Group Rule",
+      "description": "## Activate the Group Rule\n\nYou should now see the `Add customer userType to Customers Group` rule listed on the **Group Rules** page.\n\nNotice, however, that the `Status` is `Inactive`, so we'll need to activate it:\n\n1. Click `Actions`\n\n2. Select `Activate`\n\n3. Confirm the `Status` has changed to `Active`"
+    },
+    {
       "title": "Lab Checkpoint",
       "description": "## ✅ Checkpoint\n\nYou now have two Okta Groups that you will use to manage access to applications. You also have a Group Rule that will automatically add users with `userType` **customer** to the **Customers** group. We'll leverage this rule when we implement self-service registration for customers in Module 5.\n"
     }
