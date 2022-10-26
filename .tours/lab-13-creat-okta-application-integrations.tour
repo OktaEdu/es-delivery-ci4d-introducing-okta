@@ -26,17 +26,17 @@
       "line": 17
     },
     {
-      "title": "Create an Application Integration for the CSRM App",
-      "description": "# Create an Application Integration for the CSRM App\n\nWe will complete the same steps for the Franchisee app. The one difference is we will assign this app to the Franchisee group. See how many steps you can complete without referring to the instructions!\n\n1. Click `← Back to Applications`\n\n2. Click `Create App Integration`\n\n3. Select the `OIDC - OpenID Connect` radio button.\n\n4. Select the `Single-Page Application` radio button.\n\n5. Name this application `Franchisee CSRM`\n\n6. In the **Sign-in redirect URIs** field, enter `http://localhost:8080/redirect/csrm.html`\n\n7. Under **Assignments** click the radio button option for `Limit access to select groups`\n\n8. Type in and select `Franchisees`\n\n9. Click `Save`"
+      "title": "Create an Application Integration for the CRM App",
+      "description": "# Create an Application Integration for the CRM App\n\nWe will complete the same steps for the Franchisee app. The one difference is we will assign this app to the Franchisee group. See how many steps you can complete without referring to the instructions!\n\n1. Click `← Back to Applications`\n\n2. Click `Create App Integration`\n\n3. Select the `OIDC - OpenID Connect` radio button.\n\n4. Select the `Single-Page Application` radio button.\n\n5. Name this application `Franchisee CRM`\n\n6. In the **Sign-in redirect URIs** field, enter `http://localhost:8080/redirect/crm.html`\n\n7. Under **Assignments** click the radio button option for `Limit access to select groups`\n\n8. Type in and select `Franchisees`\n\n9. Click `Save`"
     },
     {
-      "file": "redirect/csrm.html",
-      "description": "## Configure the CSRM Application `appClientId`\n\n1. Copy the `Client ID` that was displayed after you saved your integration. \n\n2. Paste the `Client ID` into the `appClientID` variable above.",
+      "file": "redirect/crm.html",
+      "description": "## Configure the CRM Application `appClientId`\n\n1. Copy the `Client ID` that was displayed after you saved your integration. \n\n2. Paste the `Client ID` into the `appClientID` variable above.",
       "line": 18
     },
     {
-      "file": "redirect/csrm.html",
-      "description": "## Configure the CSRM Application `baseOktaURL`\n\n1. Change the `baseOktaURL` to match your assigned Okta org URL.\n\n2. [Click here to `Save`](command:workbench.action.files.save) your `csrm.html` file.\n3. **Log out** of your Okta org since you will be logging in as a different user in the subsequent steps.",
+      "file": "redirect/crm.html",
+      "description": "## Configure the CRM Application `baseOktaURL`\n\n1. Change the `baseOktaURL` to match your assigned Okta org URL.\n\n2. [Click here to `Save`](command:workbench.action.files.save) your `crm.html` file.\n3. **Log out** of your Okta org since you will be logging in as a different user in the subsequent steps.",
       "line": 17
     },
     {
@@ -48,12 +48,12 @@
       "description": "## Test out the Rewards App\n\n1. In Chrome, visit http://localhost:8080\n\n2. Click the `Rewards App (Redirect)` link. You should be redirected to Okta to sign in.\n\n3. Log in as `soraya.esfeh@oktaice.com`/`Tra!nme4321`\n\nYou should be redirected back to the Rewards app and you should see some information printed to the page that we will discuss later. For now you can see Soraya's email address at the top as well as your app's Client ID at the bottom.\n"
     },
     {
-      "title": "Try to Access the CSRM App",
-      "description": "## Try to Access the CSRM App\n\n1. Still logged in as Soraya, click `Return to Portal`\n\n2. Click on `CSRM App (Redirect)`\n\n3. The CSRM application does not load because Soraya is not authorized to access this application. The CSRM app is only assigned to users in the `Franchisees` group and she is not a member of that group.\n\n4. Click the `Close Okta Session` button.\n\n5. Click `Return to Portal`"
+      "title": "Try to Access the CRM App",
+      "description": "## Try to Access the CRM App\n\n1. Still logged in as Soraya, click `Return to Portal`\n\n2. Click on `CRM App (Redirect)`\n\n3. The CRM application does not load because Soraya is not authorized to access this application. The CRM app is only assigned to users in the `Franchisees` group and she is not a member of that group.\n\n4. Click the `Close Okta Session` button.\n\n5. Click `Return to Portal`"
     },
     {
       "title": "Log in as a Franchisee Partner",
-      "description": "## Log in as a Franchisee Partner\n\nNow we're going to log in as Kay West, who is a member of the Franchisees group.\n\n1. Click on `Rewards App (Redirect)`\n\n2. Enter `kay.west@oktaice.com` as the login and click `Next`\n\n3. Notice that this user did not have an existing session with Okta before trying to access an application that is not assigned to them. In this case, we are not even prompted for a password to authenticate and we are told that the application is not assigned to the user. The user still does not have a session.\n\n4. Click `Return to Portal`\n\n5. Click on `CSRM App (Redirect)` \n\n6. Log in as `kay.west@oktaice.com`/`Tra!nme4321`\n\nYou should be redirected back to the CSRM app and you should see see Kay's email address at the top as well as your app's Client ID at the bottom. \n"
+      "description": "## Log in as a Franchisee Partner\n\nNow we're going to log in as Kay West, who is a member of the Franchisees group.\n\n1. Click on `Rewards App (Redirect)`\n\n2. Enter `kay.west@oktaice.com` as the login and click `Next`\n\n3. Notice that this user did not have an existing session with Okta before trying to access an application that is not assigned to them. In this case, we are not even prompted for a password to authenticate and we are told that the application is not assigned to the user. The user still does not have a session.\n\n4. Click `Return to Portal`\n\n5. Click on `CRM App (Redirect)` \n\n6. Log in as `kay.west@oktaice.com`/`Tra!nme4321`\n\nYou should be redirected back to the CRM app and you should see see Kay's email address at the top as well as your app's Client ID at the bottom. \n"
     },
     {
       "title": "Close the Okta Session and Shut Down the Web Server",
