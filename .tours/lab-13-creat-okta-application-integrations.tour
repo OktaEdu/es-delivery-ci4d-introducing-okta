@@ -1,6 +1,6 @@
 {
   "$schema": "https://aka.ms/codetour-schema",
-  "title": "Lab 1.4 Create Okta Application Integrations",
+  "title": "#4 - Lab 1.4 Create Okta Application Integrations",
   "steps": [
     {
       "title": "Lab Overview",
