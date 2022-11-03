@@ -7,12 +7,12 @@
       "description": "## Lab 1.1: Access Your Okta Org\n\n🎯 **Objective**:    Sign in to your virtual machine and authenticate to your Okta organization.\n\n⏱️ **Duration**:    15 minutes\n"
     },
     {
-      "title": "Access Your VM",
-      "description": "## Access Your VM\n\n"
+      "title": "Access Your Credentials",
+      "description": "## Access Your Credentials\n\n In your VM, click on the arrow to the right of the Desktop to expand a Credentials side panel that will reveal your Okta org credentials.\n\n ![Expand the Credentials Panel](./.tour-resources/1-1_expand_sidebar.gif)\n\n\n Keep this panel open for the following step."
     },
     {
       "title": "Access Your Okta Admin Dashboard",
-      "description": "## Access Your Okta Admin Dashboard\n\n1. Launch the Chrome browser.\n\n2. Copy the Okta Org assigned to you (e.g. `https://oktaiceXXX.oktapreview.com`)\n\n3.  On the **Okta Sign In** page, sign in with the credentials assigned to you.\n\n4.  Select a recovery question and enter in a recovery answer.\n\n\n5.  Click `Create My Account`"
+      "description": "## Access Your Okta Admin Dashboard\n\n1. Launch the Chrome browser.\n\n2. In your VM's Credentials side panel, click the  ![copy](./.tour-resources/copy.png) icon in the `Link` section. This will automatically paste your Okta org URL into the Chrome browser.\n\n3. Click into the URL address bar in the Chrome browser and hit `Enter`\n\n4.  Once the sign in page loads click into the `Username` field.\n\n5. In your VM's Credentials side panel, click the ![copy](./.tour-resources/copy.png)  icon in the `Login` section. This will automatically paste your admin account's username into the **Username** field.\n\n5.  Click `Next`\n\n6.  In your VM's Credentials side panel, click the ![copy](./.tour-resources/copy.png)  icon in the `Password` section. This will automatically paste your admin account's password into the **Password** field.\n\n7. Click `Verify`\n8. Once logged in, click the `Admin` button to enter the Admin Dashboard.\n\nYou may now collapse the Credentials side panel in your VM."
     },
     {
       "title": "Lab Checkpoint",

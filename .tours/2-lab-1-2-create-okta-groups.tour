@@ -4,15 +4,15 @@
   "steps": [
     {
       "title": "Lab Overview",
-      "description": "## Lab 1.2: Create Okta Groups\n\n  🎯 **Objective**   Create Okta Groups -- one for Okta Ice Franchisees and one for Okta Ice customers.\n\n  🎬 **Scenario**   Franchisees and customers require a distinct groups for application access and access policies.\n\n  ⏱️ **Duration**     10 minutes\n"
+      "description": "## Lab 1.2: Create Okta Groups\n\n  🎯 **Objective**   Create Okta Groups -- one for Okta Ice Franchisees and one for Okta Ice customers.\n\n  🎬 **Scenario**   Franchisees and customers require distinct groups for application access and access policies.\n\n  ⏱️ **Duration**     10 minutes\n"
     },
     {
       "title": "Create a Franchisee Group",
-      "description": "## Create a Franchisee Group\n1.  Ensure you are logged in as your Okta Super Admin account `oktatraining` and that you are on the `Admin` dashboard.\n\n2.  Navigate to `Directory > Groups`\n\n3.  Click `Add Group`\n\n4.  In the `Name` field, enter `Franchisees`\n\n5. Click `Save`\n"
+      "description": "## Create a Franchisee Group\n1.  Ensure you are logged in as your Okta Super Admin account `oktatraining` and that you are on the `Admin` dashboard.\n\n2.  Navigate to `Directory > Groups`\n\n3.  Click `Add Group`\n\n4.  In the `Name` field, enter `Franchisees`\n\n5. In the `Description` field, enter `All Franchisees`\n\n6. Click `Save`\n"
     },
     {
       "title": "Create a Customer Group",
-      "description": "## Create a Customer Group\n\n1.  Click `Add Group` again.\n\n2.  This time, enter `Customers` in the `Name` field.\n\n3. Click `Save`\n"
+      "description": "## Create a Customer Group\n\n1.  Click `Add Group` again.\n\n2.  This time, enter `Customers` in the `Name` field and `All Customers` in the `Description` field.\n\n3. Click `Save`\n"
     },
     {
       "title": "Create a Group Rule for the Customer Group",
