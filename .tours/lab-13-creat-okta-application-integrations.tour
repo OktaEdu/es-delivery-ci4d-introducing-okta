@@ -12,31 +12,41 @@
     },
     {
       "title": "Create an Application Integration for the Rewards App",
-      "description": "## Create an Application Integration for the Rewards App\n\nThe Rewards app is an existing application in this project. We're going to set up an integration in Okta so our customers can access this application. We'll talk about the code implementation in subsequent modules.\n\n1. Click `Create App Integration`\n\n2. Select the `OIDC - OpenID Connect` radio button.\n\n3. Select the `Single-Page Application` radio button.\n\n4. Name this application `Customer Rewards`\n\n5. In the **Sign-in redirect URIs** field, enter `http://localhost:8080/redirect/rewards.html`\n\n6. Under **Assignments** click the radio button option for `Limit access to select groups`\n\n7. Type in and select `Customers`\n\n8. Click `Save`"
+      "description": "## Create an Application Integration for the Rewards App\n\nThe Rewards app is an existing application in this project. We're going to set up an integration in Okta so our customers can access this application. We'll talk about the code implementation in subsequent modules.\n\n1. Click `Create App Integration`\n\n2. Select the `OIDC - OpenID Connect` radio button.\n\n3. Select the `Single-Page Application` radio button.\n\n4. Click `Next`\n\n5. Name this application `Customer Rewards`\n\n6. In the **Sign-in redirect URIs** field, enter `http://localhost:8080/redirect/rewards.html`\n\n7. Under **Assignments** click the radio button option for `Limit access to select groups`\n\n8. Type in and select `Customers`\n\n9. Click `Save`"
     },
     {
       "file": "redirect/rewards.html",
-      "description": "## Configure the Rewards Application `appClientId`\n\nThe Rewards application makes use of Okta's AuthJS SDK, which we will learn about more in the next module. For now, you'll simply need to configure the ClientID and Okta Org URL to make this integration work.\n\n1. Copy the `Client ID` that was displayed after you saved your integration. \n\n2. Paste the `Client ID` into the `appClientID` variable above.",
+      "description": "## Configure the Rewards Application `appClientId`\n\nThe Rewards application makes use of Okta's AuthJS SDK, which we will learn about more in the next module. For now, you'll simply need to configure the ClientID and Okta Org URL to make this integration work.\n\n1. Copy the `Client ID` that was displayed after you saved your integration. \n\n2. Notice that `rewards.html` has opened for you automatically and the line containing the `appClientID` variable is highlighted. Currently there is a placeholder value of `\"XXXXXXXXXXXXXXXXXXXXXXX\"`\n\n3. Double click the placeholder value to highlight its contents and press `CTRL`+`P` to paste your `Client ID` value so that it is enclosed in the double quotes.",
       "line": 18,
-      "title": "Configure the Rewards Application `appClientId`"
+      "title": "Configure the Rewards Application `appClientId`",
+      "selection": {
+        "start": {
+          "line": 18,
+          "character": 26
+        },
+        "end": {
+          "line": 18,
+          "character": 49
+        }
+      }
     },
     {
       "file": "redirect/rewards.html",
-      "description": "## Configure the Rewards Application `baseOktaURL`\n\n1. Change the `baseOktaURL` variable above to match your assigned Okta org URL.\n\n2. [Click here to `Save`](command:workbench.action.files.save) your `rewards.html` file.",
+      "description": "## Configure the Rewards Application `baseOktaURL`\n\n1. Notice that `rewards.html` is still open, but now the line containg the the `baseOktaURL` variable is highlighted. It contains the placeholder value `https://oktaice########.oktapreview.com`\n\n3. Highlight the placeholder value **excluding** the quotation marks. Ensure your cursor is now between the quotation marks.\n\n4. Open your VM's **Credentials** panel by clicking on the arrow to the right hand side of the VM screen.\n\n5. In your VM's **Credentials** panel, click the  ![copy](./.tour-resources/copy.png) icon in the `Link` section. This will automatically paste your Okta org URL into `rewards.html` where your cursor was placed. Ensure it was pasted in the correct location and that the URL is enclosed in double quotes.\n\n6. [Click here to `Save`](command:workbench.action.files.save) your `rewards.html` file.",
       "line": 17
     },
     {
       "title": "Create an Application Integration for the CRM App",
-      "description": "# Create an Application Integration for the CRM App\n\nWe will complete the same steps for the Franchisee app. The one difference is we will assign this app to the Franchisee group. See how many steps you can complete without referring to the instructions!\n\n1. Click `← Back to Applications`\n\n2. Click `Create App Integration`\n\n3. Select the `OIDC - OpenID Connect` radio button.\n\n4. Select the `Single-Page Application` radio button.\n\n5. Name this application `Franchisee CRM`\n\n6. In the **Sign-in redirect URIs** field, enter `http://localhost:8080/redirect/crm.html`\n\n7. Under **Assignments** click the radio button option for `Limit access to select groups`\n\n8. Type in and select `Franchisees`\n\n9. Click `Save`"
+      "description": "# Create an Application Integration for the CRM App\n\nWe will complete the same steps for the Franchisee app. The one difference is we will assign this app to the Franchisee group. See how many steps you can complete without referring to the instructions!\n\n1. Click `← Back to Applications`\n\n2. Click `Create App Integration`\n\n3. Select the `OIDC - OpenID Connect` radio button.\n\n4. Select the `Single-Page Application` radio button.\n\n5. Click `Next`\n\n6. Name this application `Franchisee CRM`\n\n7. In the **Sign-in redirect URIs** field, enter `http://localhost:8080/redirect/crm.html`\n\n8. Under **Assignments** click the radio button option for `Limit access to select groups`\n\n9. Type in and select `Franchisees`\n\n10. Click `Save`"
     },
     {
       "file": "redirect/crm.html",
-      "description": "## Configure the CRM Application `appClientId`\n\n1. Copy the `Client ID` that was displayed after you saved your integration. \n\n2. Paste the `Client ID` into the `appClientID` variable above.",
+      "description": "## Configure the CRM Application `appClientId`\n\n\n1. Copy the `Client ID` that was displayed after you saved your integration. \n\n2. Notice that `crm.html` has opened for you automatically and the line containing the `appClientID` variable is highlighted. Currently there is a placeholder value of `\"XXXXXXXXXXXXXXXXXXXXXXX\"`\n\n3. Double click the placeholder value to highlight its contents and press `CTRL`+`P` to paste your `Client ID` value so that it is enclosed in the double quotes.\n",
       "line": 18
     },
     {
       "file": "redirect/crm.html",
-      "description": "## Configure the CRM Application `baseOktaURL`\n\n1. Change the `baseOktaURL` to match your assigned Okta org URL.\n\n2. [Click here to `Save`](command:workbench.action.files.save) your `crm.html` file.\n3. **Log out** of your Okta org since you will be logging in as a different user in the subsequent steps.",
+      "description": "## Configure the CRM Application `baseOktaURL`\n\n1. Notice that `crm.html` is still open, but now the line containg the the `baseOktaURL` variable is highlighted. It contains the placeholder value `https://oktaice########.oktapreview.com`\n\n3. Highlight the placeholder value **excluding** the quotation marks. Ensure your cursor is now between the quotation marks.\n\n4. Open your VM's **Credentials** panel by clicking on the arrow to the right hand side of the VM screen.\n\n5. In your VM's **Credentials** panel, click the  ![copy](./.tour-resources/copy.png) icon in the `Link` section. This will automatically paste your Okta org URL into `crm.html` where your cursor was placed. Ensure it was pasted in the correct location and that the URL is enclosed in double quotes.\n\n6. [Click here to `Save`](command:workbench.action.files.save) your `crm.html` file.\n\n7. **Log out** of your Okta org since you will be logging in as a different user in the subsequent steps.",
       "line": 17
     },
     {
@@ -45,7 +55,7 @@
     },
     {
       "title": "Test the Rewards App",
-      "description": "## Test out the Rewards App\n\n1. In Chrome, visit http://localhost:8080\n\n2. Click the `Rewards App (Redirect)` link. You should be redirected to Okta to sign in.\n\n3. Log in as `soraya.esfeh@oktaice.com`/`Tra!nme4321`\n\nYou should be redirected back to the Rewards app and you should see some information printed to the page that we will discuss later. For now you can see Soraya's email address at the top as well as your app's Client ID at the bottom.\n"
+      "description": "## Test out the Rewards App\n\nBefore following the directions below, that ensure you are **logged out** of any Okta sessions. **DO NOT use an Incognito browser window** for the steps that follow.\n\n1. In Chrome, visit http://localhost:8080 \n\n2. Click the `Rewards App (Redirect)` link. You should be redirected to Okta to sign in.\n\n3. Log in as `soraya.esfeh@oktaice.com`/`Tra!nme4321`\n\nYou should be redirected back to the Rewards app and you should see some information printed to the page that we will discuss later. For now you can see Soraya's email address at the top as well as your app's Client ID at the bottom.\n"
     },
     {
       "title": "Try to Access the CRM App",
