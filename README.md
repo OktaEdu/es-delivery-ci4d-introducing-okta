@@ -2,28 +2,17 @@
 
 # Introducing the Okta Identity Platform
 
-This repo contains everything you need to complete the labs in this module:
+This workspace contains everything you need to complete the labs in this module:
 
 - Lab 1.1: Access Your Environment
 - Lab 1.2: Create Okta Groups
 - Lab 1.3: Create Okta Users
 - Lab 1.4: Create Okta Application Integrations
 
-## How to Use
+## How to Start the Labs
 
-1. Clone this codebase: 
-```
-git clone https://github.com/OktaEdu/es-delivery-ci4d-introducing-okta.git
-```
-2. Navigate to your local repo: 
-```
-cd /es-delivery-ci4d-introducing-okta
-```
-3. Open in VSCode: 
-```
-code .
-```
-4. The CodeTour for Lab 1.1 will open automatically. If it doesn't, press the `Start Tour` button.
+
+These labs are guided by a VSCode plugin called CodeTour. To start Lab 1.1, first expand the **CODETOUR** tab on the lefthand side of VSCode. Then press the ![Start Tour](./.tour-resources/play.png) button next to Lab 1.1.
 
 ![Start Code Tour](./.tour-resources/start-tour.gif)
 
