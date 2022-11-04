@@ -20,7 +20,7 @@
     },
     {
       "title": "Activate the Group Rule",
-      "description": "## Activate the Group Rule\n\nYou should now see the `Add customer userType to Customers Group` rule listed on the **Group Rules** page.\n\nNotice, however, that the `Status` is `Inactive`, so we'll need to activate it:\n\n1. Click `Actions`\n\n2. Select `Activate`\n\n3. Confirm the `Status` has changed to `Active`"
+      "description": "## Activate the Group Rule\n\nYou should now see the `Add customer userType to Customers Group` rule listed on the **Group Rules** page.\n\nNotice, however, that the `Status` is `Inactive`, so we'll need to activate it:\n\n1. Click the drop down next to `Inactive`\n\n2. Select `Activate`\n\n3. Confirm the `Status` has changed to `Active`"
     },
     {
       "title": "Lab Checkpoint",

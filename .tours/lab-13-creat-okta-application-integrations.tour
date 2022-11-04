@@ -7,8 +7,11 @@
       "description": "## Lab 1.4: Create Okta Application Integrations\n 🎯 **Objective**    Create Okta application integrations for two existing applications. Assign one application to the Customers group and assign one application to the Franchisee group.\n \n  🎬 **Scenario**     Customers and Franchisees require access to a different set of applications.\n\n  ⏱️ **Duration**    15 minutes\n"
     },
     {
+      "description": "## Enable Cross-Origin Resource Sharing (CORS)\n\nIn Okta, **CORS** allows JavaScript hosted on your website to make a request using an\n`XMLHttpRequest` to the Okta API. While we aren't hosting the Okta Sign-In Widget when we use the Redirect Model, our sample applications ***do*** call out to Okta's API to close an Okta session and log a user out. Every website origin must be explicitly permitted as a **Trusted Origin** in your Okta org. \n\n1. Ensure you are logged in to the Admin Dashboard as `oktatraining`\n\n2. In the Admin menu, navigate to `Security` > `API`\n\n3. Click on the `Trusted Origins`  tab.\n\n4. Click the `Add Origin` button\n\n5. Enter `Okta Ice Portal` into the **Origin name** field.\n\n6. Enter `http://localhost:8080` into the **Origin URL** field.\n\n7. Under **Choose Type**, select `Cross-Origin Resource Sharing (CORS)` \n\n6. Click `Save`"
+    },
+    {
       "title": "Navigate to Applications",
-      "description": "## Navigate to Applications\n\n1. Ensure you are logged in to the Admin Dashboard as `oktatraining`\n\n2. In the Admin menu, navigate to `Applications` > `Applications`"
+      "description": "## Navigate to Applications\n\nIn the Admin menu, navigate to `Applications` > `Applications`"
     },
     {
       "title": "Create an Application Integration for the Rewards App",
@@ -16,7 +19,7 @@
     },
     {
       "file": "redirect/rewards.html",
-      "description": "## Configure the Rewards Application `appClientId`\n\nThe Rewards application makes use of Okta's AuthJS SDK, which we will learn about more in the next module. For now, you'll simply need to configure the ClientID and Okta Org URL to make this integration work.\n\n1. Copy the `Client ID` that was displayed after you saved your integration. \n\n2. Notice that `rewards.html` has opened for you automatically and the line containing the `appClientID` variable is highlighted. Currently there is a placeholder value of `\"XXXXXXXXXXXXXXXXXXXXXXX\"`\n\n3. Double click the placeholder value to highlight its contents and press `CTRL`+`P` to paste your `Client ID` value so that it is enclosed in the double quotes.",
+      "description": "## Configure the Rewards Application `appClientId`\n\nThe Rewards application makes use of Okta's AuthJS SDK, which we will learn about more in the next module. For now, you'll simply need to configure the ClientID and Okta Org URL to make this integration work.\n\n1. Copy the `Client ID` that was displayed after you saved your integration. \n\n2. Here in VSCode, notice that `rewards.html` has opened for you automatically and the line containing the `appClientID` variable is highlighted. Currently there is a placeholder value of `\"XXXXXXXXXXXXXXXXXXXXXXX\"`\n\n3. Double click the placeholder value to highlight its contents and press `CTRL`+`V` to paste your `Client ID` value so that it is enclosed in the double quotes.",
       "line": 18,
       "title": "Configure the Rewards Application `appClientId`",
       "selection": {
@@ -37,11 +40,11 @@
     },
     {
       "title": "Create an Application Integration for the CRM App",
-      "description": "# Create an Application Integration for the CRM App\n\nWe will complete the same steps for the Franchisee app. The one difference is we will assign this app to the Franchisee group. See how many steps you can complete without referring to the instructions!\n\n1. Click `← Back to Applications`\n\n2. Click `Create App Integration`\n\n3. Select the `OIDC - OpenID Connect` radio button.\n\n4. Select the `Single-Page Application` radio button.\n\n5. Click `Next`\n\n6. Name this application `Franchisee CRM`\n\n7. In the **Sign-in redirect URIs** field, enter `http://localhost:8080/redirect/crm.html`\n\n8. Under **Assignments** click the radio button option for `Limit access to select groups`\n\n9. Type in and select `Franchisees`\n\n10. Click `Save`"
+      "description": "## Create an Application Integration for the CRM App\n\nWe will complete the same steps for the Franchisee app. The one difference is we will assign this app to the Franchisee group. See how many steps you can complete without referring to the instructions!\n\n1. Back in Okta, click `← Back to Applications`\n\n2. Click `Create App Integration`\n\n3. Select the `OIDC - OpenID Connect` radio button.\n\n4. Select the `Single-Page Application` radio button.\n\n5. Click `Next`\n\n6. Name this application `Franchisee CRM`\n\n7. In the **Sign-in redirect URIs** field, enter `http://localhost:8080/redirect/crm.html`\n\n8. Under **Assignments** click the radio button option for `Limit access to select groups`\n\n9. Type in and select `Franchisees`\n\n10. Click `Save`"
     },
     {
       "file": "redirect/crm.html",
-      "description": "## Configure the CRM Application `appClientId`\n\n\n1. Copy the `Client ID` that was displayed after you saved your integration. \n\n2. Notice that `crm.html` has opened for you automatically and the line containing the `appClientID` variable is highlighted. Currently there is a placeholder value of `\"XXXXXXXXXXXXXXXXXXXXXXX\"`\n\n3. Double click the placeholder value to highlight its contents and press `CTRL`+`P` to paste your `Client ID` value so that it is enclosed in the double quotes.\n",
+      "description": "## Configure the CRM Application `appClientId`\n\n\n1. Copy the `Client ID` that was displayed after you saved your integration. \n\n2. Here in VSCode, notice that `crm.html` has opened for you automatically and the line containing the `appClientID` variable is highlighted. Currently there is a placeholder value of `\"XXXXXXXXXXXXXXXXXXXXXXX\"`\n\n3. Double click the placeholder value to highlight its contents and press `CTRL`+`V` to paste your `Client ID` value so that it is enclosed in the double quotes.\n",
       "line": 18
     },
     {
