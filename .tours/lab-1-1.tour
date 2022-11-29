@@ -4,7 +4,7 @@
   "steps": [
     {
       "title": "Lab Overview",
-      "description": "## Lab 1.1: Access Your Okta Org\n\n🎯 **Objective**:    Sign in to your virtual machine and authenticate to your Okta organization.\n\n⏱️ **Duration**:    15 minutes\n"
+      "description": "## Lab 1.1: Access Your Environment\n\n🎯 **Objective**:    Sign in to your virtual machine and authenticate to your Okta organization.\n\n⏱️ **Duration**:    20 minutes\n"
     },
     {
       "title": "Access Your Credentials",
