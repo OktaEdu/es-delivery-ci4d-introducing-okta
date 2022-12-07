@@ -15,7 +15,7 @@
     },
     {
       "title": "Create an Application Integration for the Rewards App",
-      "description": "## Create an Application Integration for the Rewards App\n\nThe Rewards app is an existing application in this project. We're going to set up an integration in Okta so our customers can access this application. We'll talk about the code implementation in subsequent modules.\n\n1. Click `Create App Integration`\n\n2. Select the `OIDC - OpenID Connect` radio button.\n\n3. Select the `Single-Page Application` radio button.\n\n4. Click `Next`\n\n5. Name this application `Customer Rewards`\n\n6. In the **Sign-in redirect URIs** field, enter `http://localhost:8080/redirect/rewards.html`\n\n7. Under **Assignments** click the radio button option for `Limit access to select groups`\n\n8. Type in and select `Customers`\n\n9. Click `Save`"
+      "description": "## Create an Application Integration for the Rewards App\n\nThe Rewards app is an existing application in this project. We're going to set up an integration in Okta so our customers can access this application. We'll talk about the code implementation in subsequent modules.\n\n1. Click `Create App Integration`\n\n2. Select the `OIDC - OpenID Connect` radio button.\n\n3. Select the `Single-Page Application` radio button.\n\n4. Click `Next`\n\n5. Enter `Customer Rewards` as the Application integration name\n\n6. In the **Sign-in redirect URIs** field, enter `http://localhost:8080/redirect/rewards.html`\n\n7. Under **Assignments** click the radio button option for `Limit access to select groups`\n\n8. Type in and select `Customers`\n\n9. Click `Save`"
     },
     {
       "file": "redirect/rewards.html",
