@@ -54,7 +54,7 @@
     },
     {
       "title": "Start the Web Server",
-      "description": "## Start the Web Server\n\n1. [Click here to toggle open the Integrated terminal](command:workbench.action.terminal.toggleTerminal) here in VSCode.\n\n2. Notice that the terminal automatically opens to the project directory.\n\n3. You can start a web server on port 8080 by issuing the following command in this terminal:\n\n ```bash\n python -m http.server 8080\n ```\n\nIf you don't want to type this in manually, you can alternatively [click here](command:codetour.sendTextToTerminal?[\" python -m http.server 8080\"]) to issue the command automatically."
+      "description": "## Start the Web Server\n\n1. [Click here to toggle open the Integrated terminal](command:workbench.action.terminal.toggleTerminal) here in VSCode.\n\n2. Notice that the terminal automatically opens to the project directory.\n\n3. You can start a web server on port 8080 by issuing the following command in this terminal:\n\n ```bash\n python -m http.server 8080\n ```\n\nIf you don't want to type this in manually, you can alternatively [click here](command:codetour.sendTextToTerminal?[\" python -m http.server 8080\"]) to issue the command automatically.\n\nOnce the web server has started successfully, you will see the following message printed to the terminal: \n\n`Serving HTTP on :: port 8080 (http://[::]:8080/) ...`"
     },
     {
       "title": "Test the Rewards App",
