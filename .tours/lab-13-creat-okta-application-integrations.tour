@@ -40,7 +40,7 @@
     },
     {
       "title": "Create an Application Integration for the CRM App",
-      "description": "## Create an Application Integration for the CRM App\n\nWe will complete the same steps for the Franchisee app. The one difference is we will assign this app to the Franchisee group. See how many steps you can complete without referring to the instructions!\n\n1. Back in Okta, click `← Back to Applications`\n\n2. Click `Create App Integration`\n\n3. Select the `OIDC - OpenID Connect` radio button.\n\n4. Select the `Single-Page Application` radio button.\n\n5. Click `Next`\n\n6. Name this application `Franchisee CRM`\n\n7. In the **Sign-in redirect URIs** field, enter `http://localhost:8080/redirect/crm.html`\n\n8. Under **Assignments** click the radio button option for `Limit access to select groups`\n\n9. Type in and select `Franchisees`\n\n10. Click `Save`"
+      "description": "## Create an Application Integration for the CRM App\n\nWe will complete the same steps for the Franchisee app. The one difference is we will assign this app to the Franchisee group. See how many steps you can complete without referring to the instructions!\n\n1. Back in Okta, click `Back to Applications`\n\n2. Click `Create App Integration`\n\n3. Select the `OIDC - OpenID Connect` radio button.\n\n4. Select the `Single-Page Application` radio button.\n\n5. Click `Next`\n\n6. Name this application `Franchisee CRM`\n\n7. In the **Sign-in redirect URIs** field, enter `http://localhost:8080/redirect/crm.html`\n\n8. Under **Assignments** click the radio button option for `Limit access to select groups`\n\n9. Type in and select `Franchisees`\n\n10. Click `Save`"
     },
     {
       "file": "redirect/crm.html",
@@ -70,7 +70,7 @@
     },
     {
       "title": "Close the Okta Session and Shut Down the Web Server",
-      "description": "## End Your Okta Session and Shut Down the Web Server\n\n1. Click the `Close Okta Session` button.\n\n2. In the terminal window in VSCode where you launched the web server, press `CTRL`+`C` to stop the web server. \n"
+      "description": "## End Your Okta Session and Shut Down the Web Server\n\n1. Click the `Close Okta Session` button.\n\n2. Your web server will stop once you close this VS Code workspace at the after the lab checkpoint."
     },
     {
       "title": "Lab Checkpoint",
