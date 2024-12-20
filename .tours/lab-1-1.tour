@@ -7,12 +7,16 @@
       "description": "## Lab 1.1: Access Your Environment\n\n🎯 **Objective**:    Sign in to your virtual machine and authenticate to your Okta organization.\n\n⏱️ **Duration**:    20 minutes\n"
     },
     {
-      "title": "Access Your Credentials",
-      "description": "## Access Your Credentials\n\n In your VM, click on the arrow to the right of the Desktop to expand the **Credentials** panel that will reveal your Okta org credentials.\n\n ![Expand the Credentials Panel](./.tour-resources/1-1_expand_sidebar.gif)\n\n\n Keep this panel open for the following step."
+      "title": "View the credentials for the tenants used in this course",
+      "description": "## View the credentials for the tenants used in this course\n 1. From the right side of the VM workspace, select the **arrow** to open the side panel.\n 2. From the **Credentials** tab, locate the Okta training org credentials for this lab.\n\n ![Expand the Credentials Panel](./.tour-resources/1-1_expand_sidebar.gif)\n\n Keep this panel open for the following step."
     },
     {
-      "title": "Access Your Okta Admin Dashboard",
-      "description": "## Access Your Okta Admin Dashboard\n\n1. Launch the Chrome browser.\n\n2. In your VM's **Credentials** panel, click the  ![copy](./.tour-resources/copy.png) icon in the `Link` section. This will automatically paste your Okta org URL into the Chrome browser.\n\n3. Click into the URL address bar in the Chrome browser and hit `Enter` to navigate to your Okta org.\n\n4.  Once the Okta Sign-In page loads, click into the `Username` field.\n\n5. In your VM's **Credentials** panel, click the ![copy](./.tour-resources/copy.png)  icon in the `Login` section. This will automatically paste your admin account's username into the **Username** field.\n\n5.  In the Okta interface, click `Next`\n\n6.  In your VM's **Credentials** panel, click the ![copy](./.tour-resources/copy.png)  icon in the `Password` section. This will automatically paste your admin account's password into the **Password** field.\n\n7. In the Okta interface, click `Verify`\n8. Once logged in to Okta, click the `Admin` button to enter the Admin Dashboard.\n\nYou may now collapse the Credentials side panel in your VM."
+      "title": "Sign into the Okta training org",
+      "description": "## Sign into the Okta training org\n\n1. In your VM workspace, open a Chrome browser window.\n\n2. In your VM's **Credentials** panel, select the  **Paste to VM** ![copy](./.tour-resources/copy.png) icon in the **URL** section. This will automatically paste your Okta org URL into the Chrome browser.\n> **Note** Before selecting paste, ensure the field you are pasting into has focus.\n\n3.  From the Chrome browser window, place the cursor in the URL and select **Enter** to go to your Okta org.\n\n4.  Once the Okta Sign-In page loads, select the **Username** field.\n\n5. In your VM's **Credentials** panel, select the **Paste to VM** ![copy](./.tour-resources/copy.png)  icon in the **Username** section. This will automatically paste your admin account's username into the **Username** field.\n\n5.  In the Okta login screen, select **Next**.\n\n6.  In your VM's **Credentials** panel, select the **Paste to VM** ![copy](./.tour-resources/copy.png)  icon in the **Password** section. This will automatically paste your admin account's password into the **Password** field.\n\n7. In the Okta login screen, select **Verify**."
+    },
+    {
+      "title": "Access the Admin Console using multi-factor authentication",
+      "description": "## Access the Admin Console using multi-factor authentication\n**Note**: This use has Super Administrator permissions.\n\n1. From the End-User Dashboard, select **Admin**.\n2. When prompted, follow the steps to set up Okta Verify. \n> **Tip**: From Okta Verify on your device, select **+** to add an account and choose the **Organization** account type.\n3. Verify that you are signed into the Admin Console.\n\nYou may now collapse the Credentials side panel in your VM."
     },
     {
       "title": "Lab Checkpoint",
