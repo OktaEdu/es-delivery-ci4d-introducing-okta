@@ -29,7 +29,7 @@
           ":" +
           window.location.port +
           window.location.pathname, // full Path to this file.
-        issuer: baseOktaURL + "/oauth2/default",
+        issuer: baseOktaURL,
       });
 
       if (authClient.isLoginRedirect()) {
