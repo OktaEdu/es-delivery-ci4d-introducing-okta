@@ -8,7 +8,17 @@
     },
     {
       "title": "View the credentials for the tenants used in this course",
-      "description": "## View the credentials for the tenants used in this course\n 1. From the right side of the VM workspace, select the **arrow** to open the side panel.\n 2. From the **Credentials** tab, locate the Okta training org credentials for this lab.\n\n ![Expand the Credentials Panel](./.tour-resources/1-1_expand_sidebar.gif)\n\n Keep this panel open for the following step."
+      "description": "## View the credentials for the tenants used in this course\n 1. From the right side of the VM workspace, select the **arrow** to open the side panel.\n 2. From the **Credentials** tab, locate the Okta training org credentials for this lab.\n\n ![Expand the Credentials Panel](https://raw.githubusercontent.com/OktaEdu/es-delivery-ci4d-introducing-okta/refs/heads/main/.tour-resources/1-1_expand_sidebar.gif)\n\n Keep this panel open for the following step.",
+      "selection": {
+        "start": {
+          "line": 5,
+          "character": 1
+        },
+        "end": {
+          "line": 5,
+          "character": 75
+        }
+      }
     },
     {
       "title": "Sign into the Okta training org",
